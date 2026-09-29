@@ -1,0 +1,50 @@
+# =========================
+# Python
+# =========================
+venv/
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Python environment / secrets
+.env
+.env.*
+!.env.example
+
+# =========================
+# Java / Maven / Spring Boot
+# =========================
+target/
+*.class
+*.jar
+*.war
+
+# =========================
+# IDE
+# =========================
+.vscode/
+.idea/
+*.iml
+.classpath
+.project
+.settings/
+
+# =========================
+# OS
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Logs
+# =========================
+*.log
+
+# =========================
+# Credentials / Secrets
+# =========================
+*.pem
+*.key
+credentials.json
