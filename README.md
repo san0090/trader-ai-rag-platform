@@ -1,3 +1,50 @@
+# Lab 01 — Tokenization & Token Counting for Trader AI
+
+## Overview
+
+This lab implements the first AI preprocessing layer of an enterprise
+financial trading assistant.
+
+A trader submits a natural-language market or portfolio-risk question
+through a Spring Boot REST API. The request is forwarded to a Python
+FastAPI service, where the text is tokenized and analyzed.
+
+This lab focuses specifically on understanding how raw financial-domain
+text is transformed into tokens and token IDs before downstream AI
+processing.
+
+---
+
+## Financial Trading Use Case
+
+Example trader question:
+
+> What are today's major portfolio risks?
+
+The system analyzes the question and returns:
+
+- Character count
+- Word count
+- Token count
+- Token pieces
+- Token IDs
+
+### Request Flow
+
+```text
+Trader
+   ↓
+Spring Boot REST API
+   ↓
+Python FastAPI Service
+   ↓
+Hugging Face Tokenizer
+   ↓
+Tokenization Analysis
+   ↓
+Spring Boot
+   ↓
+Trader
 ```
 
 ---
